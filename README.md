@@ -1,5 +1,5 @@
 # Project name:
-Anime search engine
+[Anime search engine](https://amzil-ayoub.github.io/anime-search/)
 
 # Description:
 This an anime search engine powerd by [Jikan](https://jikan.moe/) API
