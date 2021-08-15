@@ -1,0 +1,148 @@
+$color1 : #f4f1de;
+$color2 :  #3d405b;
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+
+body{
+    font-family: 'Cabin', sans-serif;
+    background-color: $color1;
+    .setting{
+            width: 200px;
+            height: 2000px;
+            background-color: $color2;
+            position: fixed;
+            left: 0;
+            top: 0;
+            ul{
+                margin-top: 50px;
+                margin-left: 20px;
+                list-style: none;
+                padding: 0px;
+                li{
+                    margin-bottom: 10px;
+                    .notFound{
+                        width: 80%;
+                        background-color: red;
+                        opacity: 0.5;
+                        color : $color1;
+                        padding: 5px;
+                        overflow: auto;
+                    }
+                    &:first-of-type{
+                    margin-bottom: 25px;
+                    }
+                    select{
+                        outline: none;
+                        padding: 3px;
+                        background-color:  $color1;
+                        width: 60%;
+                    }/*select*/
+                    input[type="text"]{
+                        width: 80%;
+                        padding: 3px;
+                        outline: none;
+                    }/*input*/
+                    #btn{
+                        cursor: pointer;
+                        padding: 5px;
+                        background-color:  $color1;
+                        color: $color2;
+                        border: 1px solid $color2;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                    }/*btn*/
+                }/*li*/
+            }/*ul*/
+        }/*seting*/
+        .container{
+            margin-top: 20px;
+            margin-left: 200px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            @media (min-width:992px){
+                    justify-content: space-around;
+                }
+            .cardContainer{
+                padding: 10px;
+                width: 80%;
+                height: 200px;
+                box-shadow: 0 0 10px #CCC;
+                margin-bottom:20px;
+                background-color: #f2cc8f70;
+                color: $color2;
+                border-radius: 5px;
+                @media (min-width:992px){
+                    width: 45%;
+                }
+                .card{
+                    width: 100%;
+                    height: 100%;
+                    .images{
+                        display: inline-block;
+                        width: 35%;
+                        height: 100%;
+                        position: relative;
+                        margin-right: 10px;
+                        .btnWatch{
+                            border-radius: 3px;
+                            cursor: pointer;
+                            position: absolute;
+                            margin: auto;
+                            margin-bottom: 10px;
+                            padding: 5px 10px;
+                            background-color:  $color1;
+                            border: 1px solid $color2;
+                            left: 50%;
+                            bottom: 3px;
+                            transform: translateX(-33px);
+                            opacity: 0.8;
+                            a{
+                                color: $color2;
+                                text-decoration: none;
+                            }/*a*/
+                            &:hover{
+                                opacity: 0.9;
+                            }   
+                        }/*btnWatch*/
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }/*img*/
+                    }/*image*/
+                    .info{
+                        display: inline-block;
+                        width: 60%;
+                        height: 100%;
+                        overflow-y: auto;
+                        overflow-x: auto;
+                        p{
+                            margin: 0px;
+                            span{
+                                width: 68%;
+                                display: inline-block;
+                                margin-bottom: 5px;
+                                &:nth-of-type(odd){
+                                    width: 30%;
+                                    font-weight: bold;
+                                }
+                            }/*span*/ 
+                            &:first-of-type{
+                                margin-top: 10px;
+                            }
+                            &:nth-of-type(5){
+                                margin-bottom: 10px;
+                            }
+                            .synBorder{
+                                border-top: 3px solid #f2cc8f;
+                                padding-top: 10px;
+                            }
+                        }/*p*/
+                    }/*info*/
+                }/*card*/
+            }/*cardContainer*/   
+        }/*container*/
+}/*body*/
+
+

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="autor" content="Ayoub Amzil">
+        <title>Anime</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section class="setting">
+            <ul>
+                <li><button id="btn">Search</button></li>
+                <li><input type="text" class="title" placeholder="Title"></li>
+                <li><select class="type">
+                <option value="tv">type</option>
+                <option value="tv">TV</option>
+                <option value="ova">OVA</option>
+                <option value="movie">Movie</option>
+                <option value="special">Special</option>
+                <option value="ona">ONA</option>
+                <option value="music">Music</option>
+                <option value="">All</option>
+                </select></li>
+                <li><select class="status">
+                <option value="">status</option>
+                <option value="completed">completed</option>
+                <option value="upcoming">upcoming</option>
+                <option value="airing">ongoing</option>
+                <option value="">All</option>
+                </select></li>
+                <li><select class="limit">
+                <option value="5">limit</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                </select></li>
+                <li>    <select class="order">
+                <option value="title">order by</option>
+                <option value="title">title</option>
+                <option value="start_date">start date</option>
+                <option value="end_date">end date</option>
+                <option value="episodes">episodes</option>
+                <option value="type">type</option>
+                <option value="">none</option>
+                </select></li>
+                <li><p class="resultText"></p></li>
+            </ul>
+        </section><!-- end setting -->
+        
+        <div class="container"><!-- start container -->
+            <!--
+            <div class="cardContainer">
+                <div class="card">
+                    <div class="images">
+                        <img class="imgAnime">
+                        <button class="btnWatch"><a target="_blank">Watch</a></button>
+                    </div>
+                    <div class="info">
+                        <p><span>Title :</span><span class="titleAnime"></span></p>
+                        <p><span>Type :</span><span class="typeAnime"></span></p>
+                        <p><span>Episodes :</span><span class="epsidesAnime"></span></p>
+                        <p><span>Score :</span><span class="scoreAnime"></span></p>
+                        <p><span>Rated :</span><span class="ratedAnime"></span></p>
+                        <p><span>Synopsis :</span></p>
+                        <p class="synoAnime"></p>
+                    </div>
+                </div>
+            </div><!-- end cardContainer -->            
+        </div><!-- end container-->
+        <!-- -->
+        <script src="js/main.js"></script> 
+    </body>
+</html>
